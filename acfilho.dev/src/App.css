@@ -1,7 +1,7 @@
 /* Responsiviness ------------------------------------- */
 
 @media only screen and
-(min-device-width: 280px) and
+(min-device-width: 0px) and
 (max-device-width: 414px) {
   .heroImage {
     display: none;
@@ -16,13 +16,26 @@
     text-align: center;
   }
 
-  .flex-left > button {
-    margin-left: 35%;
+  .hero-button-icons-flex > button {
+    align-self: center;
+    width: 35%;
+    margin-bottom: 5%;
   }
 
   .hero-button-icons-flex {
     flex-direction: column;
   }
+
+  .icon-github {
+   align-self: center;
+   margin-right:12%;
+  }
+
+  .icon-linkedin {
+    align-self: center;
+    margin-right: -14%;
+    margin-top: -12%;
+   }
 
 }
 
@@ -58,13 +71,13 @@ h1 {
   align-items: flex-end;
   margin-left: 3%;
   justify-content: left;
-  font-size: 3.5vw;
+  font-size: 3.85vw;
 }
 
 h2 {
   color: #f7f7f7;
   margin-left: 3%;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 .hero-button-icons-flex {

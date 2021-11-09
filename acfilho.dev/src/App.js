@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Image } from "react";
 
 import "./App.css";
 
 import heroImage from "./assets/hero-mockup.png";
-import Github from './assets/icon-github.svg';
-import Linkedin from './assets/icon-linkedin.svg'
+import Github from "./assets/icon-github.svg";
+import Linkedin from "./assets/icon-linkedin.svg";
 
 function App() {
   return (
@@ -19,11 +19,10 @@ function App() {
               whatever the screen size
             </h1>
 
-            <div class='hero-button-icons-flex'>
+            <div class="hero-button-icons-flex">
               <button class="button">Get in touch</button>
-              <img src={Github} class='icon-github' />
-              <img src={Linkedin} class='icon-linkedin' />
-
+              <img src={Github} class="icon-github" />
+              <img src={Linkedin} class="icon-linkedin" />
             </div>
           </div>
           <div class="flex-right">
