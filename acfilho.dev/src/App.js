@@ -33,7 +33,7 @@ function App() {
               <button class="button">Get in touch</button>
               <img
                 src={Github}
-                class="icon-github"
+                id="icon-github"
                 onClick={() => githubLink()}
               />
               <img
