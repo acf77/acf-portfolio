@@ -1,8 +1,6 @@
 /* Responsiviness ------------------------------------- */
 
-@media only screen and
-(min-device-width: 0px) and
-(max-device-width: 414px) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 414px) {
   .heroImage {
     display: none;
   }
@@ -27,20 +25,18 @@
   }
 
   .icon-github {
-   align-self: center;
-   margin-right:12%;
+    align-self: center;
+    margin-right: 12%;
   }
 
   .icon-linkedin {
     align-self: center;
     margin-right: -14%;
     margin-top: -12%;
-   }
-
+  }
 }
 
 /* End of Responsiviness ------------------------------------- */
-
 
 body {
   height: 100%;
@@ -85,24 +81,46 @@ h2 {
 }
 
 button {
-  background-color: #a4bab7;
+  background-color: #D95D1A;
+  color: #f7f7f7;
   margin-left: 3%;
   border-radius: 3px;
   border-style: none;
   font-weight: bold;
   font-size: 2vw;
+  height: fit-content;
   padding: 4% 8%;
   align-items: center;
 }
 
 button:hover {
-  background-color: #bea57d;
+  background-color: #60b349;
   cursor: pointer;
 }
 
-.icon-github, .icon-linkedin {
+.icon-github,
+.icon-linkedin {
   width: 12%;
   margin-left: 2%;
+  float: left;
+
+  /* transition type for every browser
+  webkit: chrome, safari and opera 12
+  moz: firefox
+  o: opera 11 */
+
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
+
+  /* Add standard transiton to avoid vendor error */
+  transition: margin 0.5s ease-out;
+}
+
+.icon-github:hover,
+.icon-linkedin:hover {
+  cursor: pointer;
+  margin-bottom: 3%;
 }
 
 .heroImage {
