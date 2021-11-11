@@ -20,35 +20,35 @@ function App() {
 
   return (
     <body>
-      <div class="wrapper">
-        <div class="flex-hero-container">
-          <div class="flex-left">
-            <h2>Hi there, I'm Antonio Carlos</h2>
+      <div>
+        <div className="flex-hero-container">
+          <div className="flex-left">
+            <h2>Hi there, I'm Antonio Carlos 👨🏾‍💻</h2>
             <h1>
               Coding your business
               <br />
               whatever the screen size
             </h1>
 
-            <div class="hero-button-icons-flex">
-              <button class="button">Get in touch</button>
+            <div className="hero-button-icons-flex">
+              <button className="button">Get in touch</button>
               <img
                 src={Github}
-                class="icon-github"
+                className="icon-github"
                 onClick={() => githubLink()}
               />
               <img
                 src={Linkedin}
-                class="icon-linkedin"
+                className="icon-linkedin"
                 onClick={() => linkedinLink()}
               />
             </div>
           </div>
-          <div class="flex-right">
-            <img src={heroImage} class="heroImage" />
+          <div className="flex-right">
+            <img src={heroImage} className="heroImage" />
           </div>
         </div>
-        <div class="AboutSlider">
+        <div className="AboutSlider">
           <AboutSlider />
         </div>
       </div>

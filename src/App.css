@@ -1,3 +1,8 @@
+/* Fonts ----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Poppins:wght@200;300&display=swap');
+/* Fonts ----------------------*/
+
+
 /* Responsiviness ------------------------------------- */
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 414px) {
@@ -67,25 +72,30 @@ h1 {
   align-items: flex-end;
   margin-left: 3%;
   justify-content: left;
-  font-size: 3.85vw;
+  font-size: 3.5vw;
+  font-family: 'Poppins', 'sans-serif';
+  font-weight: bold;
 }
 
 h2 {
   color: #f7f7f7;
   margin-left: 3%;
   font-size: 2.5vw;
+  font-family: 'Poppins', 'sans-serif';
+  font-weight: 200;
 }
 
 .hero-button-icons-flex {
   display: flex;
 }
 
-button {
-  background-color: #D95D1A;
+.button {
+  background-color: #d95d1a;
   color: #f7f7f7;
   margin-left: 3%;
   border-radius: 3px;
   border-style: none;
+  font-family: 'Open Sans', 'sans-serif';
   font-weight: bold;
   font-size: 2vw;
   height: fit-content;
@@ -93,7 +103,7 @@ button {
   align-items: center;
 }
 
-button:hover {
+.button:hover {
   background-color: #60b349;
   cursor: pointer;
 }
@@ -130,7 +140,7 @@ button:hover {
 /* Slider ---------------------------------*/
 
 .AboutSlider {
-  background-color:rgb(19, 19, 19);
-  height: 100%;
-  width: 98%;
+  background-color: #a2a2a2;
+  height: 400px;
+  padding: 5%;
 }
