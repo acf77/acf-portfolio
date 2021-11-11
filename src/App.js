@@ -1,4 +1,5 @@
 import React from "react";
+import AboutSlider from "./Components/AboutSlider";
 
 import "./App.css";
 
@@ -46,6 +47,9 @@ function App() {
           <div class="flex-right">
             <img src={heroImage} class="heroImage" />
           </div>
+        </div>
+        <div class="AboutSlider">
+          <AboutSlider />
         </div>
       </div>
     </body>

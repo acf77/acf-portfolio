@@ -126,3 +126,11 @@ button:hover {
 .heroImage {
   width: 120%;
 }
+
+/* Slider ---------------------------------*/
+
+.AboutSlider {
+  background-color:rgb(19, 19, 19);
+  height: 100%;
+  width: 98%;
+}
