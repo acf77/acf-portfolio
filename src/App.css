@@ -8,22 +8,31 @@
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 414px) {
     
+  
+
   .heroImage {
     display: none;
+  }
+
+  .hero-title {
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 5vw;
+    text-align: center;
   }
 
   .flex-right {
     display: none;
   }
 
-  h1, h2 {
-    text-align: center;
-  }
-
   .hero-button-icons-flex > button {
     align-self: center;
-    width: 35%;
+    width: fit-content;
     margin-bottom: 5%;
+    font-size: 4vw;
   }
 
   .hero-button-icons-flex {
@@ -50,6 +59,11 @@
   .AboutSlider {
     background-color: black;
     height: fit-content;
+  }
+
+  .slidecard-title {
+    text-align: center;
+    font-size: 4vw;
   }
 
 }

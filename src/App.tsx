@@ -23,8 +23,8 @@ function App() {
       <div>
         <div className="flex-hero-container">
           <div className="flex-left">
-            <h2>Hi there, I'm Antonio Carlos 👨🏾‍💻</h2>
-            <h1>
+            <h2 className="hero-subtitle">Hi there, I'm Antonio Carlos 👨🏾‍💻</h2>
+            <h1 className="hero-title">
               Coding your business
               <br />
               whatever the screen size
