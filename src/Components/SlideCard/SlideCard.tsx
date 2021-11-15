@@ -1,5 +1,3 @@
-import React, { Component } from 'react';
-
 import './SlideCard.css'
 
 interface CardProps {

@@ -47,7 +47,7 @@ function App() {
             </div>
           </div>
           <div className="flex-right">
-            <img alt='hero-image' src={heroImage} className="heroImage" />
+            <img alt='hero' src={heroImage} className="heroImage" />
           </div>
         </div>
         <div className="AboutSlider">
