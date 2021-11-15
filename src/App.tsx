@@ -33,11 +33,13 @@ function App() {
             <div className="hero-button-icons-flex">
               <button className="button">Get in touch</button>
               <img
+                alt='github-icon'
                 src={Github}
                 className="icon-github"
                 onClick={() => githubLink()}
               />
               <img
+                alt='linkedin-icon'
                 src={Linkedin}
                 className="icon-linkedin"
                 onClick={() => linkedinLink()}
@@ -45,7 +47,7 @@ function App() {
             </div>
           </div>
           <div className="flex-right">
-            <img src={heroImage} className="heroImage" />
+            <img alt='hero-image' src={heroImage} className="heroImage" />
           </div>
         </div>
         <div className="AboutSlider">
