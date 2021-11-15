@@ -1,11 +1,13 @@
 /* Fonts ----------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Poppins:wght@200;300&display=swap');
-/* Fonts ----------------------*/
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Poppins:wght@200;300&display=swap");
+
+/* Fonts ----------------------*/
 
 /* Responsiviness ------------------------------------- */
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 414px) {
+    
   .heroImage {
     display: none;
   }
@@ -14,8 +16,7 @@
     display: none;
   }
 
-  h1,
-  h2 {
+  h1, h2 {
     text-align: center;
   }
 
@@ -39,6 +40,18 @@
     margin-right: -14%;
     margin-top: -12%;
   }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+  }
+
+  .AboutSlider {
+    background-color: black;
+    height: fit-content;
+  }
+
 }
 
 /* End of Responsiviness ------------------------------------- */
@@ -52,7 +65,6 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  flex-direction: row;
   background-color: #434297;
   padding: 10%;
 }
@@ -73,7 +85,7 @@ h1 {
   margin-left: 3%;
   justify-content: left;
   font-size: 3.5vw;
-  font-family: 'Poppins', 'sans-serif';
+  font-family: "Poppins", "sans-serif";
   font-weight: bold;
 }
 
@@ -81,7 +93,7 @@ h2 {
   color: #f7f7f7;
   margin-left: 3%;
   font-size: 2.5vw;
-  font-family: 'Poppins', 'sans-serif';
+  font-family: "Poppins", "sans-serif";
   font-weight: 200;
 }
 
@@ -95,7 +107,7 @@ h2 {
   margin-left: 3%;
   border-radius: 3px;
   border-style: none;
-  font-family: 'Open Sans', 'sans-serif';
+  font-family: "Open Sans", "sans-serif";
   font-weight: bold;
   font-size: 2vw;
   height: fit-content;
@@ -137,10 +149,7 @@ h2 {
   width: 120%;
 }
 
-/* Slider ---------------------------------*/
 
-.AboutSlider {
-  background-color: #a2a2a2;
-  height: 400px;
-  padding: 5%;
-}
+
+
+

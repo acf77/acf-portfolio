@@ -1,8 +1,11 @@
+
+
 .card {
   background-color: black;
-  
-  width: 40%;
-  height: 300px;
+  width: 60%;
+  height: fit-content;
+  align-items: center;
+  margin-left: 20%;
 }
 
 .card > img {

@@ -1,0 +1,11 @@
+.AboutSlider {
+  /* display: flex; */
+  background-color: black;
+  height: fit-content;
+  padding: 5%;
+}
+
+.slidecard-title {
+  text-align: center;
+  font-size: 2vw;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import AboutSlider from "./Components/AboutSlider";
+import AboutSlider from "./Components/AboutSlider/AboutSlider";
 
 import "./App.css";
 
