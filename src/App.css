@@ -1,10 +1,12 @@
 /* Fonts ----------------------*/
-
+html {
+  font-size: 100%;
+} /*16px*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Poppins:wght@200;300&display=swap");
 
 /* Fonts ----------------------*/
 
-/* Responsiviness ------------------------------------- */
+/* Mobile ------------------------------------- */
 
 @media screen and (max-device-width: 540px) {
   .heroImage {
@@ -12,13 +14,17 @@
   }
 
   .hero-title {
-    font-size: 7vw;
+    font-size: 2rem;
     text-align: center;
+    font-family: "Poppins";
+    color: white;
   }
 
   .hero-subtitle {
-    font-size: 5vw;
+    font-size: 1.25rem;
     text-align: center;
+    font-family: "Poppins";
+    color: white;
   }
 
   .flex-right {
@@ -54,22 +60,44 @@
   }
 
   .AboutSlider {
-    background-color: #20252B;
+    background-color: #20252b;
     height: fit-content;
   }
 
   .slidecard-title {
     text-align: center;
     font-size: 4vw;
+    font-family: "Poppins";
+    color: white;
   }
 
   .about-me {
     flex-direction: column;
   }
 
+  #about-me-title {
+    color: #434297;
+    font-weight: 300;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: -2%;
+  }
+
   .about-me-flex-left > img {
     margin-left: 2.5%;
     width: 50%;
+  }
+
+  .hero-dev-title {
+    font-size: 1.5rem;
+  }
+
+  .stack-icons {
+    margin-left: 33%;
+  }
+
+  .stack-icons > img {
+    width: 10%;
   }
 
   .about-me-paragraph {
@@ -81,7 +109,7 @@
   }
 }
 
-/* End of Responsiviness ------------------------------------- */
+/* End of Mobile ------------------------------------- */
 
 body {
   height: 100%;
@@ -104,24 +132,6 @@ body {
 .flex-right {
   width: 100%;
   height: 100%;
-}
-
-h1 {
-  color: #f7f7f7;
-  align-items: flex-end;
-  margin-left: 3%;
-  justify-content: left;
-  font-size: 3.5vw;
-  font-family: "Poppins", "sans-serif";
-  font-weight: bold;
-}
-
-h2 {
-  color: #f7f7f7;
-  margin-left: 3%;
-  font-size: 2.5vw;
-  font-family: "Poppins", "sans-serif";
-  font-weight: 200;
 }
 
 .hero-button-icons-flex {
@@ -176,11 +186,6 @@ h2 {
   width: 120%;
 }
 
-.about-me {
-  background-color: #b8b8b8;
-  display: flex;
-}
-
 .about-me-flex-left,
 .about-me-flex-right {
   width: 100%;
@@ -192,14 +197,6 @@ h2 {
   width: 75%;
 }
 
-#about-me-title {
-  color: #434297;
-  font-weight: 300;
-  text-align: center;
-  font-size: 4.5vw;
-  margin-bottom: -2%;
-}
-
 .about-me-flex-right > .hero-dev-title {
   color: #434297;
   font-weight: 300;
@@ -207,25 +204,88 @@ h2 {
   font-size: 3vw;
 }
 
-.stack-icons {
-  margin-left: 33%;
-}
-
-.stack-icons > img {
-  width: 10%;
-}
-
-/* Conditional formatting for responsiviness */
+/* Bigger screens */
 
 @media screen and (min-device-width: 767px) {
+  .hero-title {
+    color: #f7f7f7;
+    align-items: flex-end;
+    margin-left: 3%;
+    justify-content: left;
+    font-size: 3rem;
+    font-family: "Poppins", "sans-serif";
+    font-weight: bold;
+  }
+
+  .hero-subtitle {
+    color: #f7f7f7;
+    margin-left: 3%;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 200;
+    font-size: 1.5rem;
+  }
+
+  .about-me {
+    background-color: #ffff;
+    display: flex;
+  }
+
+  #about-me-title {
+    color: #434297;
+    font-weight: 300;
+    text-align: center;
+    font-size: 4.5vw;
+    margin-bottom: -2%;
+  }
+
+  .hero-dev-title {
+    font-size: 1.5rem;
+  }
+
+  .stack-icons {
+    margin-left: 33%;
+  }
+
+  .stack-icons > img {
+    width: 10%;
+    float: left;
+
+    /* transition type for every browser
+  webkit: chrome, safari and opera 12
+  moz: firefox
+  o: opera 11 */
+
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+
+    /* Add standard transiton to avoid vendor error */
+    transition: margin 0.5s ease-out;
+  }
+
+  .stack-icons > img:hover {
+    margin-top: 3%;
+  }
+
   .about-me-paragraph {
     color: #434297;
     text-align: justify;
-    padding: 5%;
+    padding: 10%;
     font-family: "Open Sans";
     font-size: 1.5vw;
   }
+
+  .AboutSlider {
+    background-color: #20252b;
+    height: fit-content;
+  }
+
+  .slidecard-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Poppins";
+    color: white;
+  }
 }
 
-/* End of Conditional formatting for responsiviness */ 
-
+/* End of Bigger screens --------------------- */
