@@ -6,10 +6,7 @@
 
 /* Responsiviness ------------------------------------- */
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 414px) {
-    
-  
-
+@media screen and (max-device-width: 540px) {
   .heroImage {
     display: none;
   }
@@ -57,7 +54,7 @@
   }
 
   .AboutSlider {
-    background-color: black;
+    background-color: #20252B;
     height: fit-content;
   }
 
@@ -66,6 +63,22 @@
     font-size: 4vw;
   }
 
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-me-flex-left > img {
+    margin-left: 2.5%;
+    width: 50%;
+  }
+
+  .about-me-paragraph {
+    color: #434297;
+    text-align: justify;
+    padding: 5%;
+    font-family: "Open Sans";
+    font-size: 4vw;
+  }
 }
 
 /* End of Responsiviness ------------------------------------- */
@@ -163,7 +176,56 @@ h2 {
   width: 120%;
 }
 
+.about-me {
+  background-color: #b8b8b8;
+  display: flex;
+}
 
+.about-me-flex-left,
+.about-me-flex-right {
+  width: 100%;
+}
 
+.about-me-flex-left > img {
+  border-radius: 50%;
+  padding: 10%;
+  width: 75%;
+}
 
+#about-me-title {
+  color: #434297;
+  font-weight: 300;
+  text-align: center;
+  font-size: 4.5vw;
+  margin-bottom: -2%;
+}
+
+.about-me-flex-right > .hero-dev-title {
+  color: #434297;
+  font-weight: 300;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.stack-icons {
+  margin-left: 33%;
+}
+
+.stack-icons > img {
+  width: 10%;
+}
+
+/* Conditional formatting for responsiviness */
+
+@media screen and (min-device-width: 767px) {
+  .about-me-paragraph {
+    color: #434297;
+    text-align: justify;
+    padding: 5%;
+    font-family: "Open Sans";
+    font-size: 1.5vw;
+  }
+}
+
+/* End of Conditional formatting for responsiviness */ 
 
