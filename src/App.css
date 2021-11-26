@@ -44,13 +44,21 @@ html {
 
   .icon-github {
     align-self: center;
-    margin-right: 12%;
+    margin-right: 26%;
+    width: 12%;
   }
 
   .icon-linkedin {
     align-self: center;
-    margin-right: -14%;
+    margin-right: 0%;
     margin-top: -12%;
+    width: 12%;
+  }
+
+  .icon-rg {
+    align-self: center;
+    margin-right: -29%;
+    margin-top: -11.5%;
   }
 
   .card {
@@ -84,7 +92,9 @@ html {
   }
 
   .about-me-flex-left > img {
-    margin-left: 2.5%;
+    border-radius: 50%;
+    margin-left: 20%;
+    padding: 5%;
     width: 50%;
   }
 
@@ -116,12 +126,14 @@ body {
   width: 100%;
 }
 
+
+
 .flex-hero-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background-color: #434297;
   padding: 10%;
+  background-image: url('./assets/acf-portfolio-bg.png');
 }
 
 .flex-left {
@@ -157,31 +169,6 @@ body {
   cursor: pointer;
 }
 
-.icon-github,
-.icon-linkedin {
-  width: 12%;
-  margin-left: 2%;
-  float: left;
-
-  /* transition type for every browser
-  webkit: chrome, safari and opera 12
-  moz: firefox
-  o: opera 11 */
-
-  -webkit-transition: margin 0.5s ease-out;
-  -moz-transition: margin 0.5s ease-out;
-  -o-transition: margin 0.5s ease-out;
-
-  /* Add standard transiton to avoid vendor error */
-  transition: margin 0.5s ease-out;
-}
-
-.icon-github:hover,
-.icon-linkedin:hover {
-  cursor: pointer;
-  margin-bottom: 3%;
-}
-
 .heroImage {
   width: 120%;
 }
@@ -191,18 +178,7 @@ body {
   width: 100%;
 }
 
-.about-me-flex-left > img {
-  border-radius: 50%;
-  padding: 10%;
-  width: 75%;
-}
 
-.about-me-flex-right > .hero-dev-title {
-  color: #434297;
-  font-weight: 300;
-  text-align: center;
-  font-size: 3vw;
-}
 
 /* Bigger screens */
 
@@ -225,6 +201,45 @@ body {
     font-size: 1.5rem;
   }
 
+  .icon-github,
+  .icon-linkedin,
+  .icon-rg {
+    width: 12%;
+    margin-left: 2%;
+    float: left;
+
+    /* transition type for every browser
+  webkit: chrome, safari and opera 12
+  moz: firefox
+  o: opera 11 */
+
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+
+    /* Add standard transiton to avoid vendor error */
+    transition: margin 0.5s ease-out;
+  }
+
+  .icon-github:hover,
+  .icon-linkedin:hover,
+  .icon-rg:hover {
+    cursor: pointer;
+    margin-bottom: 3%;
+  }
+
+  .about-me-flex-left > img {
+    border-radius: 50%;
+    padding: 10%;
+    width: 60%;
+    margin-left: 10%;
+  }
+
+  .about-me-flex-right {
+    margin-top: 4%;
+    margin-right: 5%;
+  }
+
   .about-me {
     background-color: #ffff;
     display: flex;
@@ -234,12 +249,16 @@ body {
     color: #434297;
     font-weight: 300;
     text-align: center;
-    font-size: 4.5vw;
+    font-size: 3rem;
     margin-bottom: -2%;
   }
 
   .hero-dev-title {
+    color: #434297;
+    font-weight: 300;
+    text-align: center;
     font-size: 1.5rem;
+    margin-bottom: 5%;
   }
 
   .stack-icons {

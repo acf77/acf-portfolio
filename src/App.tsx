@@ -1,4 +1,5 @@
 import React from "react";
+//@ts-ignore
 import Fade from "react-reveal/Fade";
 
 import AboutSlider from "./Components/AboutSlider/AboutSlider";
@@ -9,6 +10,7 @@ import heroImage from "./assets/hero-mockup.png";
 import Github from "./assets/icon-github.svg";
 import Linkedin from "./assets/icon-linkedin.svg";
 
+
 function App() {
   function githubLink() {
     const link = "https://github.com/acf77";
@@ -18,6 +20,16 @@ function App() {
   function linkedinLink() {
     const link = "https://www.linkedin.com/in/acfilho/";
     window.open(link);
+  }
+
+  function rgLink() {
+    const link = "https://www.researchgate.net/profile/Antonio-Silva-Filho-6/research";
+    window.open(link);
+  }
+
+  function handleEmail() {
+    const link = "mailto:acfilho@acfilho.dev"
+    window.open(link)
   }
 
   return (
@@ -33,18 +45,24 @@ function App() {
           </h1>
 
           <div className="hero-button-icons-flex">
-            <button className="button">Get in touch</button>
+            <button className="button" onClick={handleEmail}>Get in touch</button>
             <img
               alt="github-icon"
               src={Github}
               className="icon-github"
-              onClick={() => githubLink()}
+              onClick={githubLink}
             />
             <img
               alt="linkedin-icon"
               src={Linkedin}
               className="icon-linkedin"
-              onClick={() => linkedinLink()}
+              onClick={linkedinLink}
+            />
+            <img
+              alt="rg-icon"
+              src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg"
+              className="icon-rg"
+              onClick={rgLink}
             />
           </div>
         </div>
