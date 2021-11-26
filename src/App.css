@@ -99,7 +99,11 @@ html {
   }
 
   .hero-dev-title {
-    font-size: 1.5rem;
+    color: #434297;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 5%;
   }
 
   .stack-icons {
@@ -126,14 +130,12 @@ body {
   width: 100%;
 }
 
-
-
 .flex-hero-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 10%;
-  background-image: url('./assets/acf-portfolio-bg.png');
+  background-image: url("./assets/acf-portfolio-bg.png");
 }
 
 .flex-left {
@@ -177,8 +179,6 @@ body {
 .about-me-flex-right {
   width: 100%;
 }
-
-
 
 /* Bigger screens */
 
