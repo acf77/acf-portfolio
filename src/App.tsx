@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 //@ts-ignore
 import Fade from "react-reveal/Fade";
 
 import AboutSlider from "./Components/AboutSlider/AboutSlider";
+import { TopNavBar } from "./Components/TopNavBar/TopNavBar";
 
 import "./App.css";
 
 import heroImage from "./assets/hero-mockup.png";
 import Github from "./assets/icon-github.svg";
 import Linkedin from "./assets/icon-linkedin.svg";
-
 
 function App() {
   function githubLink() {
@@ -23,20 +23,30 @@ function App() {
   }
 
   function rgLink() {
-    const link = "https://www.researchgate.net/profile/Antonio-Silva-Filho-6/research";
+    const link =
+      "https://www.researchgate.net/profile/Antonio-Silva-Filho-6/research";
     window.open(link);
   }
 
   function handleEmail() {
-    const link = "mailto:acfilho@acfilho.dev"
-    window.open(link)
+    const link = "mailto:acfilho@acfilho.dev";
+    window.open(link);
   }
 
   return (
     <body>
+      <TopNavBar
+        logoLink="#flex-hero-container"
+        getInTouchLink="#button"
+        projectsLink=".AboutSlider"
+        aboutLink="#about-me"
+      />
+
       <div className="flex-hero-container">
         <div className="flex-left">
-          <h2 className="hero-subtitle">Hi there, I'm Antonio Carlos 👨🏾‍💻</h2>
+          <h2 className="hero-subtitle">
+            Hi there, I'm Antonio Carlos Filho 👨🏾‍💻
+          </h2>
 
           <h1 className="hero-title">
             Coding your business
@@ -45,7 +55,9 @@ function App() {
           </h1>
 
           <div className="hero-button-icons-flex">
-            <button className="button" onClick={handleEmail}>Get in touch</button>
+            <button className="button" onClick={handleEmail}>
+              Get in touch
+            </button>
             <img
               alt="github-icon"
               src={Github}

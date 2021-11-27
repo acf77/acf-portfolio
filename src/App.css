@@ -8,7 +8,15 @@ html {
 
 /* Mobile ------------------------------------- */
 
-@media screen and (max-device-width: 540px) {
+@media screen and (max-device-width: 766px) {
+  .flex-hero-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10%;
+    background-image: url("./assets/acf-portfolio-bg.png");
+  }
+
   .heroImage {
     display: none;
   }
@@ -21,7 +29,7 @@ html {
   }
 
   .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
     font-family: "Poppins";
     color: white;
@@ -130,14 +138,6 @@ body {
   width: 100%;
 }
 
-.flex-hero-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 10%;
-  background-image: url("./assets/acf-portfolio-bg.png");
-}
-
 .flex-left {
   width: 100%;
   height: 100%;
@@ -183,6 +183,15 @@ body {
 /* Bigger screens */
 
 @media screen and (min-device-width: 767px) {
+  .flex-hero-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+    padding: 10%;
+    background-image: url("./assets/acf-portfolio-bg.png");
+  }
+
   .hero-title {
     color: #f7f7f7;
     align-items: flex-end;
@@ -231,7 +240,7 @@ body {
   .about-me-flex-left > img {
     border-radius: 50%;
     padding: 10%;
-    width: 60%;
+    width: 80%;
     margin-left: 10%;
   }
 
