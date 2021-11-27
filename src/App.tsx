@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 //@ts-ignore
 import Fade from "react-reveal/Fade";
 
