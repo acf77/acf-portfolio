@@ -59,18 +59,21 @@ function App() {
               Get in touch
             </button>
             <img
+              loading="lazy"
               alt="github-icon"
               src={Github}
               className="icon-github"
               onClick={githubLink}
             />
             <img
+              loading="lazy"
               alt="linkedin-icon"
               src={Linkedin}
               className="icon-linkedin"
               onClick={linkedinLink}
             />
             <img
+              loading="lazy"
               alt="rg-icon"
               src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg"
               className="icon-rg"
@@ -79,18 +82,26 @@ function App() {
           </div>
         </div>
         <div className="flex-right">
-          <img alt="hero" src={heroImage} className="heroImage" />
+          <img
+            loading="lazy"
+            alt="hero"
+            src={heroImage}
+            className="heroImage"
+          />
         </div>
       </div>
 
-      <div className="AboutSlider">
-        <AboutSlider />
-      </div>
+      <Fade bottom>
+        <div className="AboutSlider">
+          <AboutSlider />
+        </div>
+      </Fade>
 
       <Fade bottom>
         <div className="about-me">
           <div className="about-me-flex-left">
             <img
+              loading="lazy"
               alt="profile"
               src="https://avatars.githubusercontent.com/u/61336548?v=4"
             />

@@ -10,11 +10,9 @@ html {
 
 @media screen and (max-device-width: 766px) {
   .flex-hero-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    
     padding: 10%;
-    background-image: url("./assets/acf-portfolio-bg.png");
+    background-color: #434297;
   }
 
   .heroImage {
