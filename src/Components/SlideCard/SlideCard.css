@@ -1,15 +1,56 @@
-
-
 .card {
+  position: relative;
+  opacity: 1;
   background-color: black;
   width: 60%;
   height: fit-content;
   align-items: center;
   margin-left: 20%;
+
+  /* transition type for every browser
+  webkit: chrome, safari and opera 12
+  moz: firefox
+  o: opera 11 */
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
+  transition: margin 0.5 ease-out;
 }
 
 .card > img {
   width: 100%;
   height: 100%;
   border-radius: 1%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #434297;
+}
+
+.card :hover {
+  opacity: 0.8;
+  border-radius: 1%;
+  
+}
+.hover-text {
+  position: absolute;
+  top: 47.5%;
+  left: 42.5%;
+  background-color: white;
+  color: #434297;
+  font-family: 'Open Sans';
+  width: fit-content;
+  padding: 2%;
+  border-radius: 2%;
+  opacity: 1;
+  cursor: pointer;
 }

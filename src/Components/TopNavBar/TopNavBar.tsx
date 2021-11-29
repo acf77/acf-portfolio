@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+//@ts-ignore
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import "./TopNavBar.css";
 
@@ -30,10 +32,18 @@ export function TopNavBar({
       <a href={logoLink} id="logo">
         acfilho.dev
       </a>
+
       <div id="navbar-right">
-        <a id="active" href={getInTouchLink}>
+        <Link
+          class="active"
+          to={getInTouchLink}
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           Get in touch
-        </a>
+        </Link>
         <a href={projectsLink}>Projects</a>
         <a href={aboutLink}>About</a>
       </div>

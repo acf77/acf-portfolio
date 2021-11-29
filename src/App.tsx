@@ -37,8 +37,8 @@ function App() {
     <body>
       <TopNavBar
         logoLink="#flex-hero-container"
-        getInTouchLink="#button"
-        projectsLink=".AboutSlider"
+        getInTouchLink="mailto:acfilho@acfilho.dev"
+        projectsLink="#AboutSlider"
         aboutLink="#about-me"
       />
 
@@ -92,7 +92,7 @@ function App() {
       </div>
 
       <Fade bottom>
-        <div className="AboutSlider">
+        <div className="AboutSlider" id="#AboutSlider">
           <AboutSlider />
         </div>
       </Fade>

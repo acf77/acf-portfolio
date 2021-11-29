@@ -10,7 +10,6 @@ html {
 
 @media screen and (max-device-width: 766px) {
   .flex-hero-container {
-    
     padding: 10%;
     background-color: #434297;
   }
