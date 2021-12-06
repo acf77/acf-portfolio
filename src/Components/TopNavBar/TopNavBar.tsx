@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-//@ts-ignore
-import { Link, animateScroll as scroll } from "react-scroll";
-
 import "./TopNavBar.css";
 
 interface TopNavBarProps {
